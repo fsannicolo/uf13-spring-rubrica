@@ -35,7 +35,9 @@
                         <td th:text="${c.email}"></td>
     
                         <!-- operazioni sui contatti -->
-                        <td></td>
+                        <td>
+                            <a th:href="@{'/contact/delete/'+${c.id}}" method="delete" class="btn btn-danger">Elimina</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
