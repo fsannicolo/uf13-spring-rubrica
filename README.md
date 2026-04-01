@@ -10,7 +10,8 @@ Applicazione Spring per la gestione di una rubrica di contatti tramite database 
 - Driver MySQL (connettore al DBMS)
 - Validator (validazione dei form)
 - Lombok (boilerplate code)
-- TODO
+- Webjar Locator (gestione pacchetti)
+- Bootstrap
 
 Per aggiungere nuove dependencies usare l'ozione `Spring Initializr: Add starters...`
 
