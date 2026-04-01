@@ -79,11 +79,14 @@ public class ContactController {
 
     @GetMapping("contact/delete/{id}")
     public ModelAndView deleteContact(
-        @PathVariable("id") UUID contactId
+        @PathVariable("id") UUID contactId,
+        RedirectAttributes attr
     ) {
 
         contactService.deleteById(contactId);
 
+        // attributo per feedback eliminazione
+        attr.addFlashAttribute("deleted", true);
         return new ModelAndView("redirect:/");
     }
 }
